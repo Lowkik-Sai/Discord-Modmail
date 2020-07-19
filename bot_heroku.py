@@ -70,7 +70,7 @@ async def on_ready():
     
     print("Bot has logged in Gamers World")
     if default_config.get("BotDMOwnerOnRestart"):
-        await bot_owner.send("The Modmail Bot has Restared! <654669770549100575>")
+        await bot_owner.send("The Modmail Bot has Restared! <@654669770549100575>")
     await bot.change_presence(activity=discord.Game(name=default_config.get("BotPlayingStatus")))
     if default_config.get("BotBoundToGuilds"):
         for guild in bot.guilds:
