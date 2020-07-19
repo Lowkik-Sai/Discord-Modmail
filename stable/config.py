@@ -18,9 +18,9 @@ DiscordModmailLogChannel = 000000000000000000
 # BotToken : The bot token for the Oauth2 App.
 # BotPlayingStatus : The bot playing status as shown in discord.
 # BotPrefix : The bot prefix.
-BotToken = "YOURBOTTOKENISHELLO"
-BotPlayingStatus = "Hello! DM me to contact mods."
-BotPrefix = "mail."
+BotToken = "NzI2Nzk1OTcwOTc2Njc4MDAx.XxO5qQ.hym0VCmANP5Ei6YmRLkRCiFA63M"
+BotPlayingStatus = "Gamer'S World"
+BotPrefix = "+"
 
 # The 4 options below take booleans (True / False).
 # LogCommands : Set if the bot should log into the logs folder.
