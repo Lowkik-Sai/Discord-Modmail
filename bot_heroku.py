@@ -39,7 +39,7 @@ for key,value in default_config_notsafe.items():
     default_config[key] = value
     
     
-bot = commands.Bot(command_prefix=default_config.get('BotPrefix'),description="IngeniousCoder's Modmail Bot")
+bot = commands.Bot(command_prefix=default_config.get('BotPrefix'),description="Gamer's World Modmail Bot")
 bot.remove_command("help")
 
 
