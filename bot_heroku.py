@@ -134,8 +134,7 @@ async def help(ctx):
       help1.set_footer(text="Rock Star™ V1.0 - Soruce code is available in Github!")
       await ctx.send(embed=help1)
     else:
-      await ctx.send("This command only works in the staff guild. If you are a user who wants to use the bot, information can be found here.
-
+      await ctx.send("This command only works in the staff guild. If you are a user who wants to use the bot, information can be found here : https://github.com/IngeniousCoder/Discord-Modmail")
 
 
 #@bot.command()
