@@ -150,7 +150,7 @@ async def info(ctx):
     time_delta = round((t_2_uptime-t_1_uptime)*1000)
     uptime2 = GetTime(time_delta/1000)
     help1 = discord.Embed(title='Hello!', description=f"DM me to contact the moderators of {main_guild.name}!", colour=0xDEADBF)
-    help1.set_author(name='Rock Star's ModmailBot',icon_url="https://cdn.discordapp.com/attachments/388917080570986526/490075804496297995/8eebd924aeb72f681f0bc7c94226883e.png")
+    help1.set_author(name='Rock Star\'s ModmailBot',icon_url="https://cdn.discordapp.com/attachments/388917080570986526/490075804496297995/8eebd924aeb72f681f0bc7c94226883e.png")
     help1.add_field(name="Help me!",value="Donate to me [here](https://patreon.com/eltontay11) or [Star my repository!](https://github.com/IngeniousCoder/Discord-Modmail)",inline=False)
     help1.add_field(name="Uptime", value=f"{uptime2}", inline=False)
     help1.add_field(name="Operating on", value=guild_main.name)
