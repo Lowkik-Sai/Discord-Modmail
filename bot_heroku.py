@@ -40,6 +40,7 @@ for key,value in default_config_notsafe.items():
     
     
 bot = commands.Bot(command_prefix=default_config.get('BotPrefix'),description="Rock Star's Modmail Bot")
+bot.remove_command("help")
 
 
 
