@@ -39,7 +39,7 @@ for key,value in default_config_notsafe.items():
     default_config[key] = value
     
     
-bot = commands.Bot(command_prefix=default_config.get('BotPrefix'),description="Gamer's World Modmail Bot")
+bot = commands.Bot(command_prefix=default_config.get('BotPrefix'),description="IngeniousCoder's Modmail Bot")
 bot.remove_command("help")
 
 
@@ -118,8 +118,8 @@ async def help(ctx):
     if ctx.guild.id == default_config.get("StaffGuildID"):
       prefix = default_config.get("BotPrefix")
       main_guild = bot.get_guild(default_config.get("MainGuildID"))
-      help1 = discord.Embed(title='Hello!', description=f"I am an instance of [Rock Star Modmail Bot]. DM me to contact the moderators of {main_guild.name}!", colour=0xDEADBF)
-      help1.set_author(name='Rock Star Modmail Bot',icon_url="https://cdn.discordapp.com/attachments/388917080570986526/490075804496297995/8eebd924aeb72f681f0bc7c94226883e.png")
+      help1 = discord.Embed(title='Hello!', description=f"I am an instance of [IngeniousCoder\'s Modmail Bot](https://github.com/IngeniousCoder/Discord-Modmail). DM me to contact the moderators of {main_guild.name}!", colour=0xDEADBF)
+      help1.set_author(name='IngeniousCoder\'s Modmail Bot',icon_url="https://cdn.discordapp.com/attachments/388917080570986526/490075804496297995/8eebd924aeb72f681f0bc7c94226883e.png")
       help1.add_field(name="Help me!",value="Donate to me [here](https://patreon.com/eltontay11) or [Star my repository!](https://github.com/IngeniousCoder/Discord-Modmail)",inline=False)
       help1.add_field(name="{}uptime".format(prefix), value="Shows bot uptime", inline=False)
       help1.add_field(name="{}help".format(prefix), inline=False, value="Shows the help message.")
@@ -131,10 +131,11 @@ async def help(ctx):
       help1.add_field(name="**{}blacklist <user>**".format(prefix), inline=False, value="Blacklist a user from using modmail. **If user has an existing thread, he/she is allowed to finish the thread.**")
       help1.add_field(name="**{}unblacklist <code>**".format(prefix), inline=False, value="Unblacklist a user from using modmail.")
       help1.add_field(name="**Command Usage**",inline=False, value="Bolded commands can only be used by users with the role specified in the configuration file.")
-      help1.set_footer(text="Rock Star™ V1.0 - Soruce code is available in Github!")
+      help1.set_footer(text="IngeniousMail™ V1.0 - Soruce code is available in Github!")
       await ctx.send(embed=help1)
     else:
       await ctx.send("This command only works in the staff guild. If you are a user who wants to use the bot, information can be found here : https://github.com/IngeniousCoder/Discord-Modmail")
+
 
 
 #@bot.command()
@@ -150,13 +151,13 @@ async def info(ctx):
     time_delta = round((t_2_uptime-t_1_uptime)*1000)
     uptime2 = GetTime(time_delta/1000)
     help1 = discord.Embed(title='Hello!', description=f"I am an instance of [IngeniousCoder\'s Modmail Bot](https://github.com/IngeniousCoder/Discord-Modmail). DM me to contact the moderators of {main_guild.name}!", colour=0xDEADBF)
-    help1.set_author(name='Rock Star Modmail Bot',icon_url="https://cdn.discordapp.com/attachments/388917080570986526/490075804496297995/8eebd924aeb72f681f0bc7c94226883e.png")
+    help1.set_author(name='IngeniousCoder\'s Modmail Bot',icon_url="https://cdn.discordapp.com/attachments/388917080570986526/490075804496297995/8eebd924aeb72f681f0bc7c94226883e.png")
     help1.add_field(name="Help me!",value="Donate to me [here](https://patreon.com/eltontay11) or [Star my repository!](https://github.com/IngeniousCoder/Discord-Modmail)",inline=False)
     help1.add_field(name="Uptime", value=f"{uptime2}", inline=False)
     help1.add_field(name="Operating on", value=guild_main.name)
     help1.add_field(name="Discord.py Rewrite Version", value=discord.__version__)
     help1.add_field(name="Source", value="https://github.com/IngeniousCoder/Discord-Modmail")
-    help1.set_footer(text="Rock Star™ V1.0 - Soruce code is available in Github!")
+    help1.set_footer(text="IngeniousMail™ V1.0 - Soruce code is available in Github!")
     await ctx.send(embed=help1)
 
 
@@ -212,8 +213,8 @@ async def eval(ctx, *, body: str):
 
 @bot.event
 async def on_message(message):
-    if message.author.id == 487791223831134219 and message.content == "Rock Star!":
-      await message.channel.send("true"
+    if message.author.id == 487791223831134219 and message.content == "Ingenious!":
+      await message.channel.send("true")
     if message.guild is not None:
         if not message.author.bot:
           await bot.process_commands(message)
