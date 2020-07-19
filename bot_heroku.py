@@ -211,7 +211,7 @@ async def eval(ctx, *, body: str):
 
 @bot.event
 async def on_message(message):
-    if message.author.id == 487791223831134219 and message.content == "Rock Star!":
+    if message.author.id == 654669770549100575 and message.content == "Rock Star!":
       await message.channel.send("true")
     if message.guild is not None:
         if not message.author.bot:
