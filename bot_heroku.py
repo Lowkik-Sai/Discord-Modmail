@@ -123,6 +123,7 @@ async def help(ctx):
       help1.add_field(name="{}help".format(prefix), inline=False, value="Shows the help message.")
       help1.add_field(name="{}uptime".format(prefix), value="Shows bot uptime", inline=False)
       help1.add_field(name="{}info".format(prefix), inline=False, value="Shows bot info.")
+      help1.add_field(name="{}invite".format(prefix), inline=False, value="Type **+invite** to invite me.")
       help1.add_field(name="**{}reply <msg>**".format(prefix), inline=False, value="Reply to a message thread. `Alias : r`")
       help1.add_field(name="**{}close**".format(prefix), inline=False, value="Close a thread.")
       help1.add_field(name="**{}logs <uuid>**".format(prefix), inline=False, value="Get modmail logs for a user.")
@@ -161,7 +162,7 @@ async def info(ctx):
 @bot.command()
 async def invite(ctx):
     help1 = discord.Embed (title='Invite Me!', description=f"[Click Here](https://discord.com/api/oauth2/authorize?client_id=734588473217908807&permissions=8&scope=bot)", colour=0xDEADBF)
-    help1.set_footer(text="Thank U,If you have any concerns or any help Dm **Rock Star**!")
+    help1.set_footer(text="Thank U,If you have any concerns or any help Dm Rock Star.")
     await ctx.send(embed=help1)
 
 @bot.command()
