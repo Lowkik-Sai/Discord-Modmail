@@ -129,7 +129,7 @@ async def help(ctx):
       help1.add_field(name="**{}logs <uuid>**".format(prefix), inline=False, value="Get modmail logs for a user.")
       help1.add_field(name="**{}eval <code>**".format(prefix), inline=False, value="Evaluate a code.")
       help1.add_field(name="**{}blacklist <user>**".format(prefix), inline=False, value="Blacklist a user from using modmail. **If user has an existing thread, he/she is allowed to finish the thread.**")
-      help1.add_field(name="**{}unblacklist <code>**".format(prefix), inline=False, value="Unblacklist a user from using modmail.")
+      help1.add_field(name="**{}unblacklist <user>**".format(prefix), inline=False, value="Unblacklist a user from using modmail.")
       help1.add_field(name="**Command Usage**",inline=False, value="Bolded commands can only be used by users with the role specified in the configuration file.")
       help1.set_footer(text="Rock Star™ V1.0 - BOT DEV!")
       await ctx.send(embed=help1)
