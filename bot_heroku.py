@@ -155,7 +155,7 @@ async def info(ctx):
     help1.add_field(name="Uptime", value=f"{uptime2}", inline=False)
     help1.add_field(name="Operating on", value=guild_main.name)
     help1.add_field(name="Discord.py Rewrite Version", value=discord.__version__)
-    help1.add_field(name="Source", value="https://github.com/IngeniousCoder/Discord-Modmail")
+    help1.add_field(name="Source", value="GitHub")
     help1.set_footer(text="Rock Star™ V1.0 - BOT DEV!")
     await ctx.send(embed=help1)
 
