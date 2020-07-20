@@ -160,7 +160,7 @@ async def info(ctx):
 
 @bot.command()
 async def invite(ctx):
-    help1 = discord.Embed (title=Invite Me!, description=f"[Click Here](https://discord.com/api/oauth2/authorize?client_id=734588473217908807&permissions=8&scope=bot)", colour=0xDEADBF)
+    help1 = discord.Embed (title='Invite Me!', description=f"[Click Here](https://discord.com/api/oauth2/authorize?client_id=734588473217908807&permissions=8&scope=bot)", colour=0xDEADBF)
    await ctx.send(embed=help1)
 
 @bot.command()
