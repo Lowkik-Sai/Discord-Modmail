@@ -70,7 +70,7 @@ async def on_ready():
     
     print("Bot has logged in Gamers World")
     if default_config.get("BotDMOwnerOnRestart"):
-        await bot_owner.send("The Modmail Bot has Restared! <@654669770549100575>")
+        await bot_owner.send("Successfully Restared! <@654669770549100575>")
     await bot.change_presence(activity=discord.Game(name=default_config.get("BotPlayingStatus")))
     if default_config.get("BotBoundToGuilds"):
         for guild in bot.guilds:
@@ -87,7 +87,7 @@ async def on_command(ctx):
         #Log
         user = ctx.author
         guild = ctx.guild
-        if guild == None:
+        if guild = None:
             guild = FakeDMGuild(name="DMs")
         print(f"{user.name}#{user.discriminator} used command `{ctx.message.content}` in {guild.name}.")
         file = open("Logs.txt","r")
@@ -120,8 +120,8 @@ async def help(ctx):
       main_guild = bot.get_guild(default_config.get("MainGuildID"))
       help1 = discord.Embed(title='Hello!', description=f"DM me to contact the moderators of {main_guild.name}!", colour=0xDEADBF)
       help1.set_author(name='Rock Star\'s Modmail Bot',icon_url="https://cdn.discordapp.com/attachments/388917080570986526/490075804496297995/8eebd924aeb72f681f0bc7c94226883e.png")
-      help1.add_field(name="{}uptime".format(prefix), value="Shows bot uptime", inline=False)
       help1.add_field(name="{}help".format(prefix), inline=False, value="Shows the help message.")
+      help1.add_field(name="{}uptime".format(prefix), value="Shows bot uptime", inline=False)
       help1.add_field(name="{}info".format(prefix), inline=False, value="Shows bot info.")
       help1.add_field(name="**{}reply <msg>**".format(prefix), inline=False, value="Reply to a message thread. `Alias : r`")
       help1.add_field(name="**{}close**".format(prefix), inline=False, value="Close a thread.")
