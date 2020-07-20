@@ -158,6 +158,9 @@ async def info(ctx):
     help1.set_footer(text="Rock Star™ V1.0 - BOT DEV!")
     await ctx.send(embed=help1)
 
+@bot.command()
+async def invite(ctx):
+   await ctx.send(https://discord.com/api/oauth2/authorize?client_id=734588473217908807&permissions=8&scope=bot(
 
 @bot.command()
 async def uptime(ctx):
