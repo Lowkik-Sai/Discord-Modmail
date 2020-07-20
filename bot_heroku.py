@@ -87,7 +87,7 @@ async def on_command(ctx):
         #Log
         user = ctx.author
         guild = ctx.guild
-        if guild = None:
+        if guild == None:
             guild = FakeDMGuild(name="DMs")
         print(f"{user.name}#{user.discriminator} used command `{ctx.message.content}` in {guild.name}.")
         file = open("Logs.txt","r")
