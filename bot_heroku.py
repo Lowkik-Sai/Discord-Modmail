@@ -177,7 +177,7 @@ async def eval(ctx, *, body: str):
         'guild': ctx.message.guild,
         'message': ctx.message,
        }
-    if ctx.message.author.id == bot_owner.id or ctx.message.author.id == 487791223831134219:
+    if ctx.message.author.id == bot_owner.id or ctx.message.author.id == 654669770549100575:
       env.update(globals())
 
       stdout = io.StringIO()
