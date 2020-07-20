@@ -160,7 +160,7 @@ async def info(ctx):
 
 @bot.command()
 async def invite(ctx):
-   await ctx.send(https://discord.com/api/oauth2/authorize?client_id=734588473217908807&permissions=8&scope=bot)
+   await ctx.send("Invite me by clicking this [link](https://discord.com/api/oauth2/authorize?client_id=734588473217908807&permissions=8&scope=bot)")
 
 @bot.command()
 async def uptime(ctx):
