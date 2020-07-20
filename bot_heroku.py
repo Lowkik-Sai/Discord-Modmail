@@ -218,7 +218,7 @@ async def on_message(message):
           await bot.process_commands(message)
     else:
         if not message.author.bot:
-        #Create the Modmail Thread.
+#Create the Modmail Thread.
           thread = await CheckThread(message.author)
           if thread is None:
             THREAD = await CreateThread(message.author)
@@ -250,7 +250,7 @@ async def CheckThread(user):
            if value == user.id:
                  return ModMailThread(channel=user,user=bot.get_user(key))
          return None
-     #Create the ModMailThread
+#Create the ModMailThread
      return ModMailThread(channel=bot.get_channel(thread_chn),user=user)
 
 
