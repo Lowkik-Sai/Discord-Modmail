@@ -59,7 +59,7 @@ async def on_ready():
         if channel.name == "MMDATA":
             already_done = True
     if not already_done:
-        await bot_owner.send("A Catagory MMDATA has been created. DO NOT delete **anything there.** **DO NOT SEND ANY MESSAGES INTO ANY CHANNEL TOO.**")
+        await bot_owner.send("```A Catagory MMDATA has been created. DO NOT delete anything there.DO NOT SEND ANY MESSAGES INTO ANY CHANNEL TOO.```")
         catag = await guild.create_category_channel(name="MMDATA",overwrites=overwrites)
         txt = await guild.create_text_channel(name="mm-ticket-cache",category=catag)
         await txt.edit(topic="{}")
