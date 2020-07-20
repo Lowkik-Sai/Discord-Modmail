@@ -161,14 +161,15 @@ async def info(ctx):
 @bot.command()
 async def invite(ctx):
     help1 = discord.Embed (title='Invite Me!', description=f"[Click Here](https://discord.com/api/oauth2/authorize?client_id=734588473217908807&permissions=8&scope=bot)", colour=0xDEADBF)
-   await ctx.send(embed=help1)
+    help1.set_footer(text="Thank U",If you have any concerns or any help Dm **Rock Star**!")
+    await ctx.send(embed=help1)
 
 @bot.command()
 async def uptime(ctx):
   t_2_uptime = time.perf_counter()
   time_delta = round((t_2_uptime-t_1_uptime)*1000)
   await ctx.send("I have been up for `{}`!".format(GetTime(time_delta/1000)))
-
+   
 @bot.command(pass_context=True)
 async def eval(ctx, *, body: str):
     """Evaluates a code"""
